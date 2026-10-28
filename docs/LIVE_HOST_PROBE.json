@@ -1,0 +1,21 @@
+{
+  "environment": "host Python, not iOS",
+  "audiblePlaybackVerified": false,
+  "appleNativeBridgeTested": false,
+  "search": {
+    "status": "unavailable",
+    "reason": "timed out"
+  },
+  "searchSeconds": 7.051,
+  "resolve": {
+    "status": "ok",
+    "label": "AAC \u00b7 138 kbps"
+  },
+  "media": {
+    "status": 206,
+    "contentType": "text/html",
+    "bytesSampled": 195,
+    "isoMediaHeader": false
+  },
+  "resolveSeconds": 12.855
+}

@@ -1,0 +1,32 @@
+package com.mousike.app.ui.components
+import androidx.compose.ui.graphics.*
+import androidx.compose.ui.graphics.vector.*
+import androidx.compose.ui.unit.dp
+
+/** Original cached vectors; no icon font, remote asset or playback dependency. */
+object MousikeIcons {
+ private fun line(name: String,block: PathBuilder.()->Unit)=ImageVector.Builder(name,24.dp,24.dp,24f,24f).apply {path(fill=null,stroke=SolidColor(Color.Black),strokeLineWidth=1.8f,strokeLineCap=StrokeCap.Round,strokeLineJoin=StrokeJoin.Round,pathBuilder=block)}.build()
+ private fun solid(name: String,block: PathBuilder.()->Unit)=ImageVector.Builder(name,24.dp,24.dp,24f,24f).apply {path(fill=SolidColor(Color.Black),pathFillType=PathFillType.EvenOdd,pathBuilder=block)}.build()
+ val Home by lazy {line("Mousike.Home") {moveTo(3.5f,10.3f);lineTo(12f,3.6f);lineTo(20.5f,10.3f);lineTo(20.5f,19f);curveTo(20.5f,20.1f,19.7f,20.8f,18.5f,20.8f);lineTo(5.5f,20.8f);curveTo(4.3f,20.8f,3.5f,20.1f,3.5f,19f);close();moveTo(8f,15f);curveTo(9.3f,12f,10.5f,18f,12f,15f);curveTo(13.5f,12f,14.7f,18f,16f,15f)}}
+ val Search by lazy {line("Mousike.Search") {moveTo(19f,10.8f);curveTo(19f,15.3f,15.3f,19f,10.8f,19f);curveTo(6.3f,19f,2.6f,15.3f,2.6f,10.8f);curveTo(2.6f,6.3f,6.3f,2.6f,10.8f,2.6f);curveTo(15.3f,2.6f,19f,6.3f,19f,10.8f);close();moveTo(17f,17f);lineTo(21.4f,21.4f);moveTo(6.4f,11f);lineTo(6.4f,10.7f);curveTo(6.4f,8.3f,8.3f,6.4f,10.7f,6.4f)}}
+ val Discover by lazy {line("Mousike.Discover") {moveTo(12f,2.8f);curveTo(17.1f,2.8f,21.2f,6.9f,21.2f,12f);curveTo(21.2f,17.1f,17.1f,21.2f,12f,21.2f);curveTo(6.9f,21.2f,2.8f,17.1f,2.8f,12f);curveTo(2.8f,6.9f,6.9f,2.8f,12f,2.8f);close();moveTo(15.9f,8.1f);lineTo(13.6f,13.6f);lineTo(8.1f,15.9f);lineTo(10.4f,10.4f);close()}}
+ val Library by lazy {line("Mousike.Library") {moveTo(3.5f,5.2f);lineTo(3.5f,20.2f);moveTo(7.7f,3.6f);lineTo(7.7f,20.2f);moveTo(12f,4.5f);lineTo(18.4f,3.1f);curveTo(19.2f,2.9f,19.7f,3.4f,19.9f,4.2f);lineTo(22f,18f);curveTo(22.1f,18.8f,21.7f,19.4f,20.9f,19.6f);lineTo(14.5f,21f);close();moveTo(14.6f,8f);lineTo(18.1f,7.2f)}}
+ val Settings by lazy {line("Mousike.Settings") {moveTo(3.5f,6.5f);lineTo(8.5f,6.5f);moveTo(13f,6.5f);lineTo(20.5f,6.5f);moveTo(3.5f,17.5f);lineTo(11f,17.5f);moveTo(15.5f,17.5f);lineTo(20.5f,17.5f);moveTo(13f,6.5f);curveTo(13f,9.5f,8.5f,9.5f,8.5f,6.5f);curveTo(8.5f,3.5f,13f,3.5f,13f,6.5f);close();moveTo(15.5f,17.5f);curveTo(15.5f,20.5f,11f,20.5f,11f,17.5f);curveTo(11f,14.5f,15.5f,14.5f,15.5f,17.5f);close()}}
+ val Play by lazy {solid("Mousike.Play") {moveTo(7f,3.9f);curveTo(6f,3.3f,5f,3.9f,5f,5f);lineTo(5f,19f);curveTo(5f,20.1f,6f,20.7f,7f,20.1f);lineTo(19f,13.1f);curveTo(20f,12.5f,20f,11.5f,19f,10.9f);close()}}
+ val Pause by lazy {solid("Mousike.Pause") {moveTo(5.5f,4f);lineTo(9.5f,4f);lineTo(9.5f,20f);lineTo(5.5f,20f);close();moveTo(14.5f,4f);lineTo(18.5f,4f);lineTo(18.5f,20f);lineTo(14.5f,20f);close()}}
+ val Next by lazy {solid("Mousike.Next") {moveTo(4f,5f);curveTo(4f,4f,5f,3.8f,5.8f,4.4f);lineTo(15.6f,11.1f);curveTo(16.3f,11.5f,16.3f,12.5f,15.6f,12.9f);lineTo(5.8f,19.6f);curveTo(5f,20.2f,4f,20f,4f,19f);close();moveTo(18f,4f);lineTo(21f,4f);lineTo(21f,20f);lineTo(18f,20f);close()}}
+ val Previous by lazy {solid("Mousike.Previous") {moveTo(20f,5f);curveTo(20f,4f,19f,3.8f,18.2f,4.4f);lineTo(8.4f,11.1f);curveTo(7.7f,11.5f,7.7f,12.5f,8.4f,12.9f);lineTo(18.2f,19.6f);curveTo(19f,20.2f,20f,20f,20f,19f);close();moveTo(3f,4f);lineTo(6f,4f);lineTo(6f,20f);lineTo(3f,20f);close()}}
+ val Heart by lazy {line("Mousike.Heart") {moveTo(12f,20.3f);curveTo(10f,18.6f,3f,14.3f,3f,8.7f);curveTo(3f,3.9f,8.7f,2.4f,12f,6.7f);curveTo(15.3f,2.4f,21f,3.9f,21f,8.7f);curveTo(21f,14.3f,14f,18.6f,12f,20.3f);close()}}
+ val HeartFilled by lazy {solid("Mousike.HeartFilled") {moveTo(12f,21f);curveTo(9f,18.8f,2f,14.5f,2f,8.6f);curveTo(2f,3.2f,8.3f,1.5f,12f,5.5f);curveTo(15.7f,1.5f,22f,3.2f,22f,8.6f);curveTo(22f,14.5f,15f,18.8f,12f,21f);close()}}
+ val Shuffle by lazy {line("Mousike.Shuffle") {moveTo(3f,6f);lineTo(5f,6f);curveTo(9f,6f,15f,18f,19f,18f);lineTo(21f,18f);moveTo(18f,15f);lineTo(21f,18f);lineTo(18f,21f);moveTo(3f,18f);lineTo(5f,18f);curveTo(7.4f,18f,8.8f,15.4f,10.3f,13.3f);moveTo(13.8f,8.4f);curveTo(15.6f,6f,17f,6f,19f,6f);lineTo(21f,6f);moveTo(18f,3f);lineTo(21f,6f);lineTo(18f,9f)}}
+ val Repeat by lazy {line("Mousike.Repeat") {moveTo(5f,8f);curveTo(5f,5.8f,6.8f,4f,9f,4f);lineTo(20f,4f);moveTo(17f,1.5f);lineTo(20f,4f);lineTo(17f,6.5f);moveTo(19f,16f);curveTo(19f,18.2f,17.2f,20f,15f,20f);lineTo(4f,20f);moveTo(7f,17.5f);lineTo(4f,20f);lineTo(7f,22.5f)}}
+ val Down by lazy {line("Mousike.Down") {moveTo(6f,9f);lineTo(12f,15f);lineTo(18f,9f)}}
+ val More by lazy {solid("Mousike.More") {for(x in listOf(5f,12f,19f)){moveTo(x+1.7f,12f);curveTo(x+1.7f,14.3f,x-1.7f,14.3f,x-1.7f,12f);curveTo(x-1.7f,9.7f,x+1.7f,9.7f,x+1.7f,12f);close()}}}
+ val Queue by lazy {line("Mousike.Queue") {moveTo(3f,5f);lineTo(21f,5f);moveTo(3f,11f);lineTo(14f,11f);moveTo(3f,17f);lineTo(10f,17f);moveTo(18f,11f);lineTo(18f,21f);moveTo(14f,17f);lineTo(18f,21f);lineTo(22f,17f)}}
+ val Lyrics by lazy {line("Mousike.Lyrics") {moveTo(5f,3f);lineTo(19f,3f);curveTo(20f,3f,21f,4f,21f,5f);lineTo(21f,16f);curveTo(21f,17f,20f,18f,19f,18f);lineTo(10f,18f);lineTo(5f,22f);lineTo(5f,18f);lineTo(3f,18f);lineTo(3f,5f);curveTo(3f,4f,4f,3f,5f,3f);close();moveTo(7f,8f);lineTo(17f,8f);moveTo(7f,13f);lineTo(14f,13f)}}
+ val Download by lazy {line("Mousike.Download") {moveTo(12f,3f);lineTo(12f,15f);moveTo(7f,10f);lineTo(12f,15f);lineTo(17f,10f);moveTo(4f,16f);lineTo(4f,20f);lineTo(20f,20f);lineTo(20f,16f)}}
+ val Headphones by lazy {line("Mousike.Headphones") {moveTo(4f,17f);lineTo(4f,10f);curveTo(4f,-.2f,20f,-.2f,20f,10f);lineTo(20f,17f);moveTo(4f,12f);lineTo(7f,12f);lineTo(7f,20f);lineTo(4f,20f);close();moveTo(20f,12f);lineTo(17f,12f);lineTo(17f,20f);lineTo(20f,20f);close()}}
+ val Phone by lazy {line("Mousike.Phone") {moveTo(7f,2f);lineTo(17f,2f);curveTo(18.2f,2f,19f,2.8f,19f,4f);lineTo(19f,20f);curveTo(19f,21.2f,18.2f,22f,17f,22f);lineTo(7f,22f);curveTo(5.8f,22f,5f,21.2f,5f,20f);lineTo(5f,4f);curveTo(5f,2.8f,5.8f,2f,7f,2f);close();moveTo(10f,18.5f);lineTo(14f,18.5f)}}
+ val Bluetooth by lazy {line("Mousike.Bluetooth") {moveTo(12f,2f);lineTo(18f,7f);lineTo(6f,17f);moveTo(12f,2f);lineTo(12f,22f);lineTo(18f,17f);lineTo(6f,7f)}}
+ val Speaker by lazy {line("Mousike.Speaker") {moveTo(6f,2f);lineTo(18f,2f);lineTo(18f,22f);lineTo(6f,22f);close();moveTo(15.5f,14f);curveTo(15.5f,18.7f,8.5f,18.7f,8.5f,14f);curveTo(8.5f,9.3f,15.5f,9.3f,15.5f,14f);close();moveTo(11f,6f);lineTo(13f,6f)}}
+}

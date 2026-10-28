@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = 1;
+	"classes" = {
+	};
+	"objectVersion" = 56;
+	"objects" = {
+		"BB562D0C495389D5EBDEACE8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/Core/AppModel.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"9CE3FB93F705689FCFDC0D2F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/Core/Backend.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"1F2A1264DC023CBE05013C91" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/Core/LibraryStore.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"EFB5E7BA095D673CD153522D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/Core/Models.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"8DF72E813D145CE3F4E8A7C1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/Core/Player.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"C9C8F451D3B70142E7CB58D2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/MousikeApp.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"C63DF0D0D731CFDA772CD688" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/UI/Artwork.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"9632624BD9CB6CEE0FA76E22" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/UI/PlayerScreen.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"01116A7291C90C664F3C449F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/UI/Screens.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"70EAFA1AF6F82FB17AB7B8F0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "App/UI/SettingsScreen.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"CC977434A8AC0A072E76F1C8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.c.objc";
+			"path" = "App/Bridge/MousikePython.m";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"9C827027C1F8EE3A9F5F65CF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.c.h";
+			"path" = "App/Bridge/Bridging.h";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"C571E9DA12614561FF30E2E0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.c.h";
+			"path" = "App/Bridge/MousikePython.h";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"DBB8BC76ABBDC8303B4AEC7C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BB562D0C495389D5EBDEACE8";
+		};
+		"D96D0BCD478B5ACDDC6981DB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9CE3FB93F705689FCFDC0D2F";
+		};
+		"C62D453B98E5AF141E906ED5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "1F2A1264DC023CBE05013C91";
+		};
+		"A1F7B0EB455D7D4C6BFAB780" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EFB5E7BA095D673CD153522D";
+		};
+		"03CFD2D95F89ECC9BE2C0675" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8DF72E813D145CE3F4E8A7C1";
+		};
+		"341C9F60B2BFECD3C4733382" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C9C8F451D3B70142E7CB58D2";
+		};
+		"20007DDBAC2B2EC55F0CBF9B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C63DF0D0D731CFDA772CD688";
+		};
+		"0E6D4CCB852AEB8EBE1A5FFD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9632624BD9CB6CEE0FA76E22";
+		};
+		"C45E9F8DF4DBB5D1A3EFB808" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "01116A7291C90C664F3C449F";
+		};
+		"32BDC1C4EF26435BF8F8A5D1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "70EAFA1AF6F82FB17AB7B8F0";
+		};
+		"275D0F811A110E1DBAA00A3E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CC977434A8AC0A072E76F1C8";
+		};
+		"4BAA52CD09551E71BD6A8C1A" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+				"DBB8BC76ABBDC8303B4AEC7C",
+				"D96D0BCD478B5ACDDC6981DB",
+				"C62D453B98E5AF141E906ED5",
+				"A1F7B0EB455D7D4C6BFAB780",
+				"03CFD2D95F89ECC9BE2C0675",
+				"341C9F60B2BFECD3C4733382",
+				"20007DDBAC2B2EC55F0CBF9B",
+				"0E6D4CCB852AEB8EBE1A5FFD",
+				"C45E9F8DF4DBB5D1A3EFB808",
+				"32BDC1C4EF26435BF8F8A5D1",
+				"275D0F811A110E1DBAA00A3E",
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"3AA005BAB8DC9F2DD1BD1BCC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "App/Resources/Assets.xcassets";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"FBF999A5B1F915D0EAF3631C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder";
+			"path" = "SharedPython";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"B0E5D18AB35E9BE77584F6F2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "App/Resources/PrivacyInfo.xcprivacy";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"DEBC23734AC673005438D9D6" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder";
+			"path" = "App/Resources/FontLicenses";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"A2FE4B6903C5288E8DF33BAF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "App/Resources/Fonts/MousikeInter-Bold.ttf";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"F1BD6EEAF1A46223F3DFC241" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "App/Resources/Fonts/MousikeInter-Regular.ttf";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"5C5A92420D3821EDB01B8A01" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "App/Resources/Fonts/MousikeManrope-Bold.ttf";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"F55274127A40EBC7EBB59ECC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "App/Resources/Fonts/MousikeManrope-Regular.ttf";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"0648A26798285ABE80141081" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "App/Resources/Fonts/MousikeRoboto-Bold.ttf";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"11957E68C78D56F3BE62CD9C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "file";
+			"path" = "App/Resources/Fonts/MousikeRoboto-Regular.ttf";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"02283E3F576015C13609DE3E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3AA005BAB8DC9F2DD1BD1BCC";
+		};
+		"3BD09452793D8E2999A35B47" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FBF999A5B1F915D0EAF3631C";
+		};
+		"BB6095106AC879B2D696DA87" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B0E5D18AB35E9BE77584F6F2";
+		};
+		"A89AD5205CC821B8C7167B4D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "DEBC23734AC673005438D9D6";
+		};
+		"548FC773C73F2F4A6EB7163D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A2FE4B6903C5288E8DF33BAF";
+		};
+		"196AD8B84B8E3F3E2D5A4E6F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F1BD6EEAF1A46223F3DFC241";
+		};
+		"21D4B36A68930520A7D411B5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "5C5A92420D3821EDB01B8A01";
+		};
+		"B45F4786D6FF87A044647209" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F55274127A40EBC7EBB59ECC";
+		};
+		"9E5FCD714CF51072499A9E2A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0648A26798285ABE80141081";
+		};
+		"90494C9CB856F4E06A698B1A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "11957E68C78D56F3BE62CD9C";
+		};
+		"30E458ADCDB9E736299F6E2A" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+				"02283E3F576015C13609DE3E",
+				"3BD09452793D8E2999A35B47",
+				"BB6095106AC879B2D696DA87",
+				"A89AD5205CC821B8C7167B4D",
+				"548FC773C73F2F4A6EB7163D",
+				"196AD8B84B8E3F3E2D5A4E6F",
+				"21D4B36A68930520A7D411B5",
+				"B45F4786D6FF87A044647209",
+				"9E5FCD714CF51072499A9E2A",
+				"90494C9CB856F4E06A698B1A",
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"2F2AAFAE43B8F46DFEE23075" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "wrapper.xcframework";
+			"path" = "Vendor/Python/Python.xcframework";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"E309E47D3C7B3A3A61F56322" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2F2AAFAE43B8F46DFEE23075";
+		};
+		"8DA1768C342356448C095741" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+				"E309E47D3C7B3A3A61F56322",
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"0834F6736761B1EDD562BD47" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2F2AAFAE43B8F46DFEE23075";
+			"settings" = {
+				"ATTRIBUTES" = (
+					"CodeSignOnCopy",
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		"2F43048BC6AA9EF18D90D3C9" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"dstPath" = "";
+			"dstSubfolderSpec" = 10;
+			"name" = "Embed Python framework";
+			"files" = (
+				"0834F6736761B1EDD562BD47",
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"226A11B377CDAEB326CD5D9F" = {
+			"isa" = "PBXShellScriptBuildPhase";
+			"name" = "Install bundled Python and sign extensions";
+			"buildActionMask" = 2147483647;
+			"files" = (
+			);
+			"inputPaths" = (
+			);
+			"outputPaths" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+			"shellPath" = "/bin/bash";
+			"shellScript" = "set -euo pipefail\n/usr/bin/python3 \"$PROJECT_DIR/scripts/install_python.py\"\n";
+			"alwaysOutOfDate" = 1;
+		};
+		"81EA81D282A15055A1CB37F2" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = 0;
+			"path" = "Mousike.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"B00CCDD09424E369308D67FA" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.sujalwagholikar.mousike.ios";
+				"PRODUCT_NAME" = "Mousike";
+				"INFOPLIST_FILE" = "App/Info.plist";
+				"SWIFT_OBJC_BRIDGING_HEADER" = "App/Bridge/Bridging.h";
+				"HEADER_SEARCH_PATHS" = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Python.framework/Headers",
+				);
+				"FRAMEWORK_SEARCH_PATHS" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Python",
+				);
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"MARKETING_VERSION" = "3.9.1";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"ENABLE_BITCODE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_COMPILATION_MODE" = "singlefile";
+			};
+		};
+		"1B104479E55E37CF8A63CBDF" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.sujalwagholikar.mousike.ios";
+				"PRODUCT_NAME" = "Mousike";
+				"INFOPLIST_FILE" = "App/Info.plist";
+				"SWIFT_OBJC_BRIDGING_HEADER" = "App/Bridge/Bridging.h";
+				"HEADER_SEARCH_PATHS" = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Python.framework/Headers",
+				);
+				"FRAMEWORK_SEARCH_PATHS" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Python",
+				);
+				"LD_RUNPATH_SEARCH_PATHS" = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"MARKETING_VERSION" = "3.9.1";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"ENABLE_BITCODE" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"06CB67C35A91E16DBD17B949" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"B00CCDD09424E369308D67FA",
+				"1B104479E55E37CF8A63CBDF",
+			);
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"38F2A6093C7B53641DF88727" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "Mousike";
+			"productName" = "Mousike";
+			"productReference" = "81EA81D282A15055A1CB37F2";
+			"productType" = "com.apple.product-type.application";
+			"buildConfigurationList" = "06CB67C35A91E16DBD17B949";
+			"buildPhases" = (
+				"4BAA52CD09551E71BD6A8C1A",
+				"8DA1768C342356448C095741",
+				"30E458ADCDB9E736299F6E2A",
+				"226A11B377CDAEB326CD5D9F",
+				"2F43048BC6AA9EF18D90D3C9",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+			);
+		};
+		"E283A86D2AC70C1C676BF9C0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/MousikeTests.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"8CC3F775824E469904F0D3F6" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = 0;
+			"path" = "MousikeTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"24135B7C4EC757338DF106E7" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "38F2A6093C7B53641DF88727";
+			"remoteInfo" = "Mousike";
+		};
+		"6C2EFF2D4D61308495D8207A" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "38F2A6093C7B53641DF88727";
+			"targetProxy" = "24135B7C4EC757338DF106E7";
+		};
+		"4DC0109A89636D831218F337" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.sujalwagholikar.mousike.ios.MousikeTests";
+				"PRODUCT_NAME" = "MousikeTests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/Mousike.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mousike";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_COMPILATION_MODE" = "singlefile";
+			};
+		};
+		"ECF30DAA3ED6C3381AD650A0" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.sujalwagholikar.mousike.ios.MousikeTests";
+				"PRODUCT_NAME" = "MousikeTests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/Mousike.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mousike";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"C91519BEAF8EE334398DFFE0" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"4DC0109A89636D831218F337",
+				"ECF30DAA3ED6C3381AD650A0",
+			);
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"B1FFB231238CB262A618A98D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E283A86D2AC70C1C676BF9C0";
+		};
+		"4604711F3EF419F8A1CC42B8" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+				"B1FFB231238CB262A618A98D",
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"7454033E430272720E71A488" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"0828187BA32BDC856897D999" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "MousikeTests";
+			"productName" = "MousikeTests";
+			"productReference" = "8CC3F775824E469904F0D3F6";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+			"buildConfigurationList" = "C91519BEAF8EE334398DFFE0";
+			"buildPhases" = (
+				"4604711F3EF419F8A1CC42B8",
+				"7454033E430272720E71A488",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+				"6C2EFF2D4D61308495D8207A",
+			);
+		};
+		"A134566D759812FC3D222BBE" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Tests/MousikeUITests.swift";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"53BBCBD4AA063FD32C617073" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = 0;
+			"path" = "MousikeUITests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"1921706B61722893AE13F78A" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "244210E48437B6556980A702";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "38F2A6093C7B53641DF88727";
+			"remoteInfo" = "Mousike";
+		};
+		"7B43948E18ACD51EF4FA048A" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "38F2A6093C7B53641DF88727";
+			"targetProxy" = "1921706B61722893AE13F78A";
+		};
+		"8228984D55BEB79A225410CA" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.sujalwagholikar.mousike.ios.MousikeUITests";
+				"PRODUCT_NAME" = "MousikeUITests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TEST_TARGET_NAME" = "Mousike";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_COMPILATION_MODE" = "singlefile";
+			};
+		};
+		"8258E234E7AFFB671AF3C125" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.sujalwagholikar.mousike.ios.MousikeUITests";
+				"PRODUCT_NAME" = "MousikeUITests";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TEST_TARGET_NAME" = "Mousike";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"CD513E2877CAF732186AEECD" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"8228984D55BEB79A225410CA",
+				"8258E234E7AFFB671AF3C125",
+			);
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"77206E4C055061EC162D2897" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A134566D759812FC3D222BBE";
+		};
+		"0D2C6AD62567F448755C3ACD" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+				"77206E4C055061EC162D2897",
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"853D11DD19427DB928B14A4B" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (
+			);
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"B93645DE72143FD681953934" = {
+			"isa" = "PBXNativeTarget";
+			"name" = "MousikeUITests";
+			"productName" = "MousikeUITests";
+			"productReference" = "53BBCBD4AA063FD32C617073";
+			"productType" = "com.apple.product-type.bundle.ui-testing";
+			"buildConfigurationList" = "CD513E2877CAF732186AEECD";
+			"buildPhases" = (
+				"0D2C6AD62567F448755C3ACD",
+				"853D11DD19427DB928B14A4B",
+			);
+			"buildRules" = (
+			);
+			"dependencies" = (
+				"7B43948E18ACD51EF4FA048A",
+			);
+		};
+		"4819E6FA1392B376DB8CDC07" = {
+			"isa" = "PBXGroup";
+			"name" = "App";
+			"children" = (
+				"BB562D0C495389D5EBDEACE8",
+				"9CE3FB93F705689FCFDC0D2F",
+				"1F2A1264DC023CBE05013C91",
+				"EFB5E7BA095D673CD153522D",
+				"8DF72E813D145CE3F4E8A7C1",
+				"C9C8F451D3B70142E7CB58D2",
+				"C63DF0D0D731CFDA772CD688",
+				"9632624BD9CB6CEE0FA76E22",
+				"01116A7291C90C664F3C449F",
+				"70EAFA1AF6F82FB17AB7B8F0",
+				"CC977434A8AC0A072E76F1C8",
+				"9C827027C1F8EE3A9F5F65CF",
+				"C571E9DA12614561FF30E2E0",
+			);
+			"sourceTree" = "<group>";
+		};
+		"E72685212AF966A85FF3F9E9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "App/Info.plist";
+			"sourceTree" = "SOURCE_ROOT";
+		};
+		"35A1031E991D85C2D12E5768" = {
+			"isa" = "PBXGroup";
+			"name" = "Resources";
+			"children" = (
+				"3AA005BAB8DC9F2DD1BD1BCC",
+				"FBF999A5B1F915D0EAF3631C",
+				"B0E5D18AB35E9BE77584F6F2",
+				"DEBC23734AC673005438D9D6",
+				"A2FE4B6903C5288E8DF33BAF",
+				"F1BD6EEAF1A46223F3DFC241",
+				"5C5A92420D3821EDB01B8A01",
+				"F55274127A40EBC7EBB59ECC",
+				"0648A26798285ABE80141081",
+				"11957E68C78D56F3BE62CD9C",
+				"E72685212AF966A85FF3F9E9",
+			);
+			"sourceTree" = "<group>";
+		};
+		"78BCDAF397C912E2664E4B2A" = {
+			"isa" = "PBXGroup";
+			"name" = "Tests";
+			"children" = (
+				"E283A86D2AC70C1C676BF9C0",
+				"A134566D759812FC3D222BBE",
+			);
+			"sourceTree" = "<group>";
+		};
+		"33757FBD8EAE64C6F8DCF484" = {
+			"isa" = "PBXGroup";
+			"name" = "Products";
+			"children" = (
+				"81EA81D282A15055A1CB37F2",
+				"8CC3F775824E469904F0D3F6",
+				"53BBCBD4AA063FD32C617073",
+			);
+			"sourceTree" = "<group>";
+		};
+		"A0282CDBEE91B0AC00351D03" = {
+			"isa" = "PBXGroup";
+			"children" = (
+				"4819E6FA1392B376DB8CDC07",
+				"35A1031E991D85C2D12E5768",
+				"2F2AAFAE43B8F46DFEE23075",
+				"78BCDAF397C912E2664E4B2A",
+				"33757FBD8EAE64C6F8DCF484",
+			);
+			"sourceTree" = "<group>";
+		};
+		"73EBF6644258C120893E685D" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Debug";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "NO";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"ONLY_ACTIVE_ARCH" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu11";
+				"ENABLE_TESTABILITY" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_COMPILATION_MODE" = "singlefile";
+			};
+		};
+		"0B0C687DF8B6B8DC790B519C" = {
+			"isa" = "XCBuildConfiguration";
+			"name" = "Release";
+			"buildSettings" = {
+				"IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "NO";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"ONLY_ACTIVE_ARCH" = "YES";
+				"GCC_C_LANGUAGE_STANDARD" = "gnu11";
+				"ENABLE_TESTABILITY" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+		};
+		"76F8DEC3DFE0BDB465198890" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = (
+				"73EBF6644258C120893E685D",
+				"0B0C687DF8B6B8DC790B519C",
+			);
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"244210E48437B6556980A702" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"LastUpgradeCheck" = "1600";
+				"BuildIndependentTargetsInParallel" = "YES";
+			};
+			"buildConfigurationList" = "76F8DEC3DFE0BDB465198890";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "en";
+			"hasScannedForEncodings" = 0;
+			"knownRegions" = (
+				"en",
+				"Base",
+			);
+			"mainGroup" = "A0282CDBEE91B0AC00351D03";
+			"productRefGroup" = "33757FBD8EAE64C6F8DCF484";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = (
+				"38F2A6093C7B53641DF88727",
+				"0828187BA32BDC856897D999",
+				"B93645DE72143FD681953934",
+			);
+		};
+	};
+	"rootObject" = "244210E48437B6556980A702";
+}

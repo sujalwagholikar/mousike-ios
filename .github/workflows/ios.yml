@@ -1,0 +1,41 @@
+name: iOS source validation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['App/**', 'SharedPython/**', 'Tests/**', 'scripts/**', 'Mousike.xcodeproj/**']
+permissions:
+  contents: read
+jobs:
+  ios:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Generate project and check portable code
+        run: |
+          python3 scripts/generate_project.py
+          python3 -m unittest discover -s Tests -p 'test_*.py' -v
+      - name: Build simulator app
+        run: bash scripts/build-mac.sh simulator
+      - name: Select available iPhone simulator
+        run: |
+          xcrun simctl list devices available -j > /tmp/simulators.json
+          python3 - <<'PY'
+          import json,os
+          devices=json.load(open('/tmp/simulators.json'))['devices']
+          phone=next(d for group in devices.values() for d in group if d.get('isAvailable') and d['name'].startswith('iPhone'))
+          with open(os.environ['GITHUB_ENV'],'a') as f:f.write('IOS_TEST_DESTINATION=platform=iOS Simulator,id='+phone['udid']+'\n')
+          PY
+      - name: Run native unit and UI tests
+        run: bash scripts/build-mac.sh test
+      - name: Retain actual native result bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mousike-iOS-native-results
+          path: build/Mousike-Tests.xcresult
+          if-no-files-found: ignore

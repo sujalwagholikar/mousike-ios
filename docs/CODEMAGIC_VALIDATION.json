@@ -1,0 +1,11 @@
+{
+  "edition": "Codemagic",
+  "hostTestsPassed": 42,
+  "yamlWorkflowsParsed": 4,
+  "shellSyntaxChecks": "passed",
+  "codemagicBuildExecuted": false,
+  "nativeCompilationVerified": false,
+  "signedIPAProduced": false,
+  "physicalIPhoneVerified": false,
+  "previousGitHubFailureDiagnosed": false
+}

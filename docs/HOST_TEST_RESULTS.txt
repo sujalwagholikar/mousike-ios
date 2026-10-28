@@ -1,0 +1,48 @@
+test_album_navigation_inside_title (test_ios_api.CatalogTests.test_album_navigation_inside_title) ... ok
+test_album_opens_as_collection (test_ios_api.CatalogTests.test_album_opens_as_collection) ... ok
+test_artist_normalization (test_ios_api.CatalogTests.test_artist_normalization) ... ok
+test_artwork_chooses_moderate_resolution (test_ios_api.CatalogTests.test_artwork_chooses_moderate_resolution) ... ok
+test_deduplicates_song (test_ios_api.CatalogTests.test_deduplicates_song) ... ok
+test_normalizes_music_and_duration (test_ios_api.CatalogTests.test_normalizes_music_and_duration) ... ok
+test_rejects_jukebox (test_ios_api.CatalogTests.test_rejects_jukebox) ... ok
+test_rejects_long_videos (test_ios_api.CatalogTests.test_rejects_long_videos) ... ok
+test_rejects_untyped_video (test_ios_api.CatalogTests.test_rejects_untyped_video) ... ok
+test_results_are_bounded (test_ios_api.CatalogTests.test_results_are_bounded) ... ok
+test_browse_continuation_is_bounded (test_ios_api.DispatchTests.test_browse_continuation_is_bounded) ... ok
+test_empty_search_does_not_call_network (test_ios_api.DispatchTests.test_empty_search_does_not_call_network) ... ok
+test_invalid_browse_id (test_ios_api.DispatchTests.test_invalid_browse_id) ... ok
+test_invalid_track_id (test_ios_api.DispatchTests.test_invalid_track_id) ... ok
+test_original_backend_unchanged (test_ios_api.DispatchTests.test_original_backend_unchanged) ... ok
+test_payload_object_required (test_ios_api.DispatchTests.test_payload_object_required) ... ok
+test_resolve_keeps_pytubefix_api_path (test_ios_api.DispatchTests.test_resolve_keeps_pytubefix_api_path) ... ok
+test_search_passes_exact_route (test_ios_api.DispatchTests.test_search_passes_exact_route) ... ok
+test_unknown_operation (test_ios_api.DispatchTests.test_unknown_operation) ... ok
+test_cpn_preserved (test_ios_api.FormatPolicyTests.test_cpn_preserved) ... ok
+test_high_supports_real_256k (test_ios_api.FormatPolicyTests.test_high_supports_real_256k) ... ok
+test_hls_supported (test_ios_api.FormatPolicyTests.test_hls_supported) ... ok
+test_live_not_inserted (test_ios_api.FormatPolicyTests.test_live_not_inserted) ... ok
+test_low_selects_at_most_96k_when_available (test_ios_api.FormatPolicyTests.test_low_selects_at_most_96k_when_available) ... ok
+test_matching_metadata_required (test_ios_api.FormatPolicyTests.test_matching_metadata_required) ... ok
+test_no_transcoding_or_fake_lossless_label (test_ios_api.FormatPolicyTests.test_no_transcoding_or_fake_lossless_label) ... ok
+test_original_language_not_dub (test_ios_api.FormatPolicyTests.test_original_language_not_dub) ... ok
+test_provider_restriction_has_readable_reason (test_ios_api.FormatPolicyTests.test_provider_restriction_has_readable_reason) ... ok
+test_reject_otf_streams (test_ios_api.FormatPolicyTests.test_reject_otf_streams) ... ok
+test_reject_segmented_otf (test_ios_api.FormatPolicyTests.test_reject_segmented_otf) ... ok
+test_super_high_uses_highest_compatible_source (test_ios_api.FormatPolicyTests.test_super_high_uses_highest_compatible_source) ... ok
+test_unknown_quality_rejected (test_ios_api.FormatPolicyTests.test_unknown_quality_rejected) ... ok
+test_urls_are_https_googlevideo_only (test_ios_api.FormatPolicyTests.test_urls_are_https_googlevideo_only) ... ok
+test_webm_not_sent_to_old_apple_decoder (test_ios_api.FormatPolicyTests.test_webm_not_sent_to_old_apple_decoder) ... ok
+test_1024_icon_is_opaque_rgb_and_correct_dimensions (test_packaging.PackagingTests.test_1024_icon_is_opaque_rgb_and_correct_dimensions) ... ok
+test_all_project_object_relationships_resolve (test_packaging.PackagingTests.test_all_project_object_relationships_resolve) ... ok
+test_all_project_source_references_exist (test_packaging.PackagingTests.test_all_project_source_references_exist) ... ok
+test_backend_dependencies_are_pure_python (test_packaging.PackagingTests.test_backend_dependencies_are_pure_python) ... ok
+test_device_and_simulator_runtime_slices_present (test_packaging.PackagingTests.test_device_and_simulator_runtime_slices_present) ... ok
+test_native_background_capability_without_auth_gate (test_packaging.PackagingTests.test_native_background_capability_without_auth_gate) ... ok
+test_registered_font_files_exist (test_packaging.PackagingTests.test_registered_font_files_exist) ... ok
+test_selected_stdlib_and_signed_framework_layout (test_packaging.PackagingTests.test_selected_stdlib_and_signed_framework_layout) ... Bundled Python 3.13 stdlib installed for ios-arm64_x86_64-simulator x86_64
+ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.061s
+
+OK

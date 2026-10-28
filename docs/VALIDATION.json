@@ -1,0 +1,48 @@
+{
+  "status": "SOURCE_PREVIEW_NOT_SIGNED_OR_DEVICE_VERIFIED",
+  "baseline": "classic unlocked Android 3.9.0",
+  "iosPortVersion": "3.9.1",
+  "accessCodeRequired": false,
+  "iosDeploymentTarget": "15.0",
+  "hostTests": {
+    "run": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "packagingCodesignIsMocked": true
+  },
+  "swiftSyntaxParse": {
+    "files": 12,
+    "errors": [],
+    "isTypecheck": false
+  },
+  "pythonBackendByteIdenticalToClassic": true,
+  "nativeXcodeBuildPerformed": false,
+  "nativeUnitTestsRun": false,
+  "nativeUITestsRun": false,
+  "physicalIPhoneTested": false,
+  "nativeAudiblePlaybackVerified": false,
+  "signedIPAProduced": false,
+  "liveHostProbe": {
+    "environment": "host Python, not iOS",
+    "audiblePlaybackVerified": false,
+    "appleNativeBridgeTested": false,
+    "search": {
+      "status": "unavailable",
+      "reason": "timed out"
+    },
+    "searchSeconds": 7.051,
+    "resolve": {
+      "status": "ok",
+      "label": "AAC \u00b7 138 kbps"
+    },
+    "media": {
+      "status": 206,
+      "contentType": "text/html",
+      "bytesSampled": 195,
+      "isoMediaHeader": false
+    },
+    "resolveSeconds": 12.855
+  },
+  "runtimeArchiveSHA256": "80175765a31babe43b0910395cf86ba4e8412adf1902b069d55b74d523ecc5d1"
+}

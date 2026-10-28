@@ -1,0 +1,10 @@
+roster-0.1.11.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+roster-0.1.11.dist-info/LICENSE,sha256=GnW03-0adM_f-nbemR0-poxBk-zJQWQB3t8yAMMFMhY,1067
+roster-0.1.11.dist-info/METADATA,sha256=uR8cO3cBUK2HMWg3PpRQhPoKDiQxGO_ehm5EBYgZt2A,2868
+roster-0.1.11.dist-info/RECORD,,
+roster-0.1.11.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roster-0.1.11.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+roster/__init__.py,sha256=kY4hYk1e_0p-UV322lVFrU0UlRPtgPeedvcFu_g90eM,69
+roster/abc.py,sha256=1OKGIb2hP3-HmsSzu2zIw3u5N5KiBzpzU6ygvDbwSGM,2287
+roster/concrete.py,sha256=RAHoeB0380Q_pwRHmqAvh4-eHS73Vs3i5hreBcyh0cM,524
+roster/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

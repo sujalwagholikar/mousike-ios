@@ -1,0 +1,5 @@
+{
+  "Vendor/Python/testbed/Python.xcframework": "../Python.xcframework",
+  "Vendor/Python/Python.xcframework/ios-arm64/lib/libpython3.13.dylib": "../Python.framework/Python",
+  "Vendor/Python/Python.xcframework/ios-arm64_x86_64-simulator/lib/libpython3.13.dylib": "../Python.framework/Python"
+}

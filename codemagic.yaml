@@ -1,0 +1,76 @@
+# Native iOS. Start manually; no automatic store publishing or credential placeholders.
+workflows:
+  ios-simulator:
+    name: "iOS simulator - compile and native tests"
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+      python: "3.13"
+    scripts:
+      - name: Restore runtime links, generate project and run host checks
+        script: python3 scripts/ci/prepare.py
+      - name: Build native iOS artifact
+        script: bash scripts/ci/simulator.sh
+    artifacts:
+      - build/ios/ipa/*
+      - build/logs/*.log
+      - build/NativeTests.xcresult
+      - /tmp/xcodebuild_logs/*.log
+  ios-unsigned:
+    name: "iPhone unsigned IPA - requires later signing"
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+      python: "3.13"
+    scripts:
+      - name: Restore runtime links, generate project and run host checks
+        script: python3 scripts/ci/prepare.py
+      - name: Build native iOS artifact
+        script: bash scripts/ci/unsigned.sh
+    artifacts:
+      - build/ios/ipa/*
+      - build/logs/*.log
+      - build/NativeTests.xcresult
+      - /tmp/xcodebuild_logs/*.log
+  ios-adhoc:
+    name: "iPhone signed Ad Hoc IPA"
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+      python: "3.13"
+      ios_signing:
+        distribution_type: ad_hoc
+        bundle_identifier: com.sujalwagholikar.mousike.ios
+    scripts:
+      - name: Restore runtime links, generate project and run host checks
+        script: python3 scripts/ci/prepare.py
+      - name: Build native iOS artifact
+        script: bash scripts/ci/signed.sh
+    artifacts:
+      - build/ios/ipa/*
+      - build/logs/*.log
+      - build/NativeTests.xcresult
+      - /tmp/xcodebuild_logs/*.log
+  ios-appstore:
+    name: "App Store signed IPA - export only"
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+      python: "3.13"
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.sujalwagholikar.mousike.ios
+    scripts:
+      - name: Restore runtime links, generate project and run host checks
+        script: python3 scripts/ci/prepare.py
+      - name: Build native iOS artifact
+        script: bash scripts/ci/signed.sh
+    artifacts:
+      - build/ios/ipa/*
+      - build/logs/*.log
+      - build/NativeTests.xcresult
+      - /tmp/xcodebuild_logs/*.log

@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: roster
+Version: 0.1.11
+Summary: Python object registers. Keep track of your classes, functions and data.
+Home-page: https://github.com/tombulled/roster
+License: MIT
+Keywords: youtube,roster,record,register
+Author: Tom Bulled
+Author-email: 26026015+tombulled@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/tombulled/roster
+Description-Content-Type: text/markdown
+
+# roster
+Python object registers. Keep track of your classes, functions and data.
+
+## Installation
+`roster` can be installed from [PyPI](https://pypi.org/project/roster/)
+```console
+pip install roster
+```
+
+## Usage:
+
+### `Record`
+
+#### Default Record
+```python
+from roster import Record
+
+numbers: Record[int] = Record()
+
+numbers(1)
+numbers(2)
+numbers(3)
+```
+
+```python
+>>> numbers
+[1, 2, 3]
+```
+
+#### Generate each `item`
+```python
+from roster import Record
+
+characters: Record[str] = Record()
+
+@characters.item
+def character(char: str, /) -> str:
+    return char.upper()
+
+character('a')
+character('b')
+character('c')
+```
+
+```python
+>>> characters
+['A', 'B', 'C']
+```
+
+### `Register`
+
+#### Default Register
+```python
+from roster import Register
+
+services: Register[str, type] = Register()
+
+@services('youtube')
+class YouTube: pass
+
+@services('spotify')
+class Spotify: pass
+```
+
+```python
+>>> services
+{'youtube': <class '__main__.YouTube'>, 'spotify': <class '__main__.Spotify'>}
+```
+
+#### Generate each `key`
+```python
+from roster import Register
+from typing import Callable
+
+functions: Register[str, Callable] = Register()
+
+@functions.key
+def function(name: str, /) -> str:
+    return name.upper()
+
+@function('foo')
+def foo(): pass
+
+@function('bar')
+def bar(): pass
+```
+
+```python
+>>> functions
+{'FOO': <function foo at 0x7f9c4f065790>, 'BAR': <function bar at 0x7f9c4f065820>}
+```
+
+#### Generate each `value`
+```python
+from roster import Register
+from typing import Callable
+
+functions: Register[str, Callable] = Register()
+
+@functions.value
+def function(name: str, /) -> str:
+    return name.upper()
+
+@function('foo')
+def foo(): pass
+
+@function('bar')
+def bar(): pass
+```
+
+```python
+>>> functions
+{<function foo at 0x7f26443aa790>: 'FOO', <function bar at 0x7f26443aa820>: 'BAR'}
+```
+
+#### Generate each `entry`
+```python
+from roster import Register
+from typing import Tuple
+
+identifiers: Register[str, str] = Register()
+
+@identifiers.entry
+def identifier(code: str, /) -> Tuple[str, str]:
+    return (code[0], code.upper())
+
+identifier('foo')
+identifier('bar')
+```
+
+```python
+>>> identifiers
+{'f': 'FOO', 'b': 'BAR'}
+```
