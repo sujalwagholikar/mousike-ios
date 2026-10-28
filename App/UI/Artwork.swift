@@ -9,7 +9,7 @@ import ImageIO
     }()
     private static let session: URLSession = {
         let config = URLSessionConfiguration.ephemeral; config.timeoutIntervalForRequest = 8
-        config.timeoutIntervalForResource = 12; config.URLCache = nil; config.HTTPMaximumConnectionsPerHost = 4
+        config.timeoutIntervalForResource = 12; config.urlCache = nil; config.httpMaximumConnectionsPerHost = 4
         return URLSession(configuration: config)
     }()
     static func cached(_ key: String) -> UIImage? { cache.object(forKey: key as NSString) }
