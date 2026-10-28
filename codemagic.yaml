@@ -6,7 +6,6 @@ workflows:
     max_build_duration: 60
     environment:
       xcode: latest
-      python: "3.13"
     scripts:
       - name: Restore runtime links, generate project and run host checks
         script: python3 scripts/ci/prepare.py
@@ -23,7 +22,6 @@ workflows:
     max_build_duration: 60
     environment:
       xcode: latest
-      python: "3.13"
     scripts:
       - name: Restore runtime links, generate project and run host checks
         script: python3 scripts/ci/prepare.py
@@ -40,7 +38,6 @@ workflows:
     max_build_duration: 60
     environment:
       xcode: latest
-      python: "3.13"
       ios_signing:
         distribution_type: ad_hoc
         bundle_identifier: com.sujalwagholikar.mousike.ios
@@ -60,7 +57,6 @@ workflows:
     max_build_duration: 60
     environment:
       xcode: latest
-      python: "3.13"
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.sujalwagholikar.mousike.ios
